@@ -31,12 +31,6 @@
 
 </div>
 
-$imagen= base_url()."uploads/imagenes/taza.jpg;";
-<h6>Hola amorcito, te envie un correo con una taza</h6><br><br>
-<img src="uploads/imagenes/taza.jpg" width="150" height="150" alt="">
-
-
-
 <script type="text/javascript">
 var baseurl="<?php echo base_url();?>";
 </script>
