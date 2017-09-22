@@ -28,7 +28,6 @@ $configYahoo = array(
 }
 
 
-
 public function sendMailGmail(){
 
 $this->load->library("email");
