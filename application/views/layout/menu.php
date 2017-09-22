@@ -49,7 +49,7 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url()?>Cnotas"><i class="fa fa-circle-o"></i> Ingresar Notas</a></li>
             <li><a href="<?php echo base_url()?>Cmesas"><i class="fa fa-circle-o"></i>Mesas</a></li>
-            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="<?php echo base_url()?>CrearPdf"><i class="fa fa-circle-o"></i> crear PDF</a></li>
             <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
