@@ -50,7 +50,7 @@
             <li><a href="<?php echo base_url()?>Cnotas"><i class="fa fa-circle-o"></i> Ingresar Notas</a></li>
             <li><a href="<?php echo base_url()?>Cmesas"><i class="fa fa-circle-o"></i>Mesas</a></li>
             <li><a href="<?php echo base_url()?>CrearPdf"><i class="fa fa-circle-o"></i> crear PDF</a></li>
-            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="<?php echo base_url()?>Cexcel/dExcel"><i class="fa fa-circle-o"></i> Exportar a Excel</a></li>
           </ul>
         </li>
         <li>

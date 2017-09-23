@@ -3,7 +3,7 @@
 class export_excel{
 
     function to_excel($array, $filename) {
-        header('Content-Disposition: attachment; filename='.$filename.'.xlsx');
+        header('Content-Disposition: attachment; filename='.$filename.'.xls');
         header('Content-type: application/force-download');
         header('Content-Transfer-Encoding: binary');
         header('Pragma: public');
@@ -36,6 +36,5 @@ class export_excel{
     function writeRow($val) {
         echo '<td style="border:1px #888 solid;color:#555;">'.$val.'</td>';              
     }
-
 }
 ?>

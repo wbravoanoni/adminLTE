@@ -80,9 +80,14 @@ $this->db->join('ciudades b','a.idCiudad=b.idCiudad');
 $r=$this->db->get();
 
 return $r->result();
+	}
 
-
-
+		public function getPersona(){
+		$this->db->select('nombre, appaterno, apmaterno');
+		$this->db->from('persona');
+		$query = $this->db->get();
+					
+		return $query;
 	}
 
 }
