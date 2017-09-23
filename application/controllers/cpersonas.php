@@ -87,4 +87,10 @@ echo json_encode($this->mpersona->getPersonasModel());
 
 }
 
+public function getPersonasEdad(){
+
+echo json_encode($this->mpersona->getPersonasEdadModel());
+
+}
+
 }

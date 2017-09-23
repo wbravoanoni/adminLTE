@@ -90,4 +90,16 @@ return $r->result();
 		return $query;
 	}
 
+
+public function getPersonasEdadModel(){
+$this->db->select('nombre,edad');
+$this->db->from('persona');
+$query=$this->db->get();
+
+return $query->result();
+
+
+}
+
+
 }
