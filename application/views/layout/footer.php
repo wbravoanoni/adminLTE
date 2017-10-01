@@ -50,9 +50,14 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url()?>assets/dist/js/demo.js"></script>
 
+<!--Librerias Datatable-->
+<script src="<?php echo base_url()?>assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url()?>assets/plugins/datatables/dataTables.bootstrap.min.js"></script>
+
 <?php
 if($this->uri->segment(1)=='cpersonas'){?>
   <script src="<?php echo base_url()?>/js/persona.js"></script>
+  <script src="<?php echo base_url()?>/js/listarPersonas.js"></script>
 <?php
 }
   if($this->uri->segment(1)=='Cnotas'){?>
@@ -63,6 +68,13 @@ if($this->uri->segment(1)=='cpersonas'){?>
 <?php
  if($this->uri->segment(1)=='Cmesas'){?>
    <script src="<?php echo base_url()?>/js/mesa.js"></script>
+<?php
+}
+?>
+
+<?php
+ if($this->uri->segment(1)=='CdataTables'){?>
+   <script src="<?php echo base_url()?>/js/dataTables.js"></script>
 <?php
 }
 ?>

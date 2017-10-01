@@ -92,5 +92,23 @@ public function getPersonasEdad(){
 echo json_encode($this->mpersona->getPersonasEdadModel());
 
 }
+	public function listarUsuarios(){
+
+	$this->load->view('layout/header');
+	$this->load->view('layout/menu');
+	$this->load->view('persona/VlistarUsuarios');
+	$this->load->view('layout/footer');
+	}
+
+	public function actualizarUsuarioModal(){
+
+$datos['idPersona']    = $this->input->post('idP1');
+$datos['nombre']       = $this->input->post('nom1');
+$datos['appaterno']    = $this->input->post('app1');
+$datos['apmaterno']    = $this->input->post('apm1');
+$datos['email']        = $this->input->post('mail1');
+
+echo json_encode ($this->mpersona->actualizarPersona($datos));
+}
 
 }

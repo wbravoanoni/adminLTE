@@ -60,20 +60,21 @@ $this->db->insert('usuario',$campos);
 
 
 $campos=array(
-	'idPersona'    =>$datos['idPersona'],
-	'nombre'       =>$datos['nombre'],
-	'appaterno'    =>$datos['appaterno'],
-	'apmaterno'    =>$datos['apmaterno'],
-	'email'        =>$datos['email']
+	'idPersona'    => $datos['idPersona'],
+	'nombre'       => $datos['nombre'],
+	'appaterno'    => $datos['appaterno'],
+	'apmaterno'    => $datos['apmaterno'],
+	'email'        => $datos['email']
 	);
 $this->db->where('idPersona', $datos['idPersona']);
 $this->db->update('persona',$campos);
 
+return 1;
 	}
 
 	public function getPersonasModel(){
 
-$this->db->select('a.idPersona,a.nombre,a.appaterno,a.apmaterno,b.ciudad,a.email,a.dni,a.fecnac');
+$this->db->select('a.idPersona,a.nombre,a.appaterno,a.apmaterno,b.ciudad,a.email,a.dni,a.fecnac,a.estado');
 $this->db->from('persona a');
 $this->db->join('ciudades b','a.idCiudad=b.idCiudad');
 
@@ -97,8 +98,6 @@ $this->db->from('persona');
 $query=$this->db->get();
 
 return $query->result();
-
-
 }
 
 

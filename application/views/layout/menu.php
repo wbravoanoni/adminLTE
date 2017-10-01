@@ -35,7 +35,7 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="<?php echo base_url()?>cpersonas"><i class="fa fa-circle-o"></i>Registrar Persona</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="<?php echo base_url()?>cpersonas/listarUsuarios"><i class="fa fa-circle-o"></i>Listar Usuarios</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -115,7 +115,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="<?php echo base_url()?>CdataTables"><i class="fa fa-circle-o"></i> Data tables 2</a></li>
           </ul>
         </li>
         <li>
